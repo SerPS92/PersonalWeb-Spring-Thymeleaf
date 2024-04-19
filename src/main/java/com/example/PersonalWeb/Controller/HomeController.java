@@ -32,6 +32,11 @@ public class HomeController {
         String content = "Name: " + name + "\n" + "Email: " + from + "\n" + "\n" + text;
         mailSenderService.sendEmail(to, subject, content);
 
-        return "redirect:/";
+        return "redirect:/thanks";
+    }
+
+    @GetMapping("/thanks")
+    public String thanks(){
+        return "thanks";
     }
 }

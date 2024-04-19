@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Start your development with Meyawo landing page.">
+	<meta name="author" content="Devcrud">
+	<title>Sergio Suárez blog</title>
+	<!-- font icons -->
+	<link rel="stylesheet" th:href="@{vendors/themify-icons/css/themify-icons.css}">
+	<!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" th:href="@{css/meyawo.css}">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+
+<!-- page header -->
+<header id="home" class="header">
+	<div class="overlay"></div>
+	<div class="header-content container">
+		<h1 class="header-title">
+			<span class="up">Gracias por escribirme!</span>
+			<h2>Te responderé con la mayor brevedad posible</h2>
+		</h1>
+		<br>
+		<a th:href="@{/}" class="btn btn-outline-primary rounded"
+		   style="display: block; margin: 0 auto; text-align: center;">Volver</a>
+	
+	</div>
+</header><!-- end of page header -->
+
+<!-- section -->
+<section class="section-sm bg-primary">
+	<!-- container -->
+	<div class="container text-center text-sm-left">
+		<!-- row -->
+		<div class="row align-items-center">
+			<div class="col-sm offset-md-1 mb-4 mb-md-0">
+				<h6 class="title text-light"></h6>
+				<p class="m-0 text-light"></p>
+			</div>
+		</div> <!-- end of row -->
+	</div> <!-- end of container -->
+</section> <!-- end of section -->
+
+
+<!-- footer -->
+<div class="container">
+	<footer class="footer">
+		<p class="mb-0">Copyright
+			<script>document.write(new Date().getFullYear())</script> &copy;
+		</p>
+		<div class="social-links text-right m-auto ml-sm-auto">
+			<a href="https://es.linkedin.com/in/sergio-pi%C3%B1eiro-suarez" class="link"><i class="ti-linkedin"></i></a>
+			<a href="https://github.com/SerPS92" class="link"><i class="ti-github"></i></a>
+		</div>
+	</footer>
+</div> <!-- end of page footer -->
+
+<!-- core  -->
+
+<script th:src="@{vendors/jquery/jquery-3.4.1.js}"></script>
+<script th:src="@{vendors/bootstrap/bootstrap.bundle.js}"></script>
+
+<!-- bootstrap 3 affix -->
+<script th:src="@{vendors/bootstrap/bootstrap.affix.js}"></script>
+
+<!-- Meyawo js -->
+<script th:src="@{js/meyawo.js}"></script>
+
+</body>
+
+</html>
