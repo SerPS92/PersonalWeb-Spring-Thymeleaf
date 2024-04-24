@@ -14,7 +14,6 @@ public class HomeController {
 
     private final MailSenderService mailSenderService;
 
-    @Autowired
     public HomeController(MailSenderService mailSenderService) {
         this.mailSenderService = mailSenderService;
     }
