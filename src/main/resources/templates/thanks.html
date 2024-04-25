@@ -8,9 +8,9 @@
 	<meta name="author" content="Devcrud">
 	<title>Sergio Suárez blog</title>
 	<!-- font icons -->
-	<link rel="stylesheet" th:href="@{vendors/themify-icons/css/themify-icons.css}">
+	<link rel="stylesheet" th:href="@{/vendors/themify-icons/css/themify-icons.css}">
 	<!-- Bootstrap + Meyawo main styles -->
-	<link rel="stylesheet" th:href="@{css/meyawo.css}">
+	<link rel="stylesheet" th:href="@{/css/meyawo.css}">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -19,15 +19,16 @@
 <!-- page header -->
 <header id="home" class="header">
 	<div class="overlay"></div>
-	<div class="header-content container">
+	<div class="container text-center">
 		<h1 class="header-title">
 			<span class="up">Gracias por escribirme!</span>
-			<h2>Te responderé con la mayor brevedad posible</h2>
+			<h2 class="down">Te responderé con la mayor brevedad posible</h2>
 		</h1>
 		<br>
-		<a th:href="@{/}" class="btn btn-outline-primary rounded"
-		   style="display: block; margin: 0 auto; text-align: center;">Volver</a>
-	
+		<div class="form-group col-sm-12 mt-3">
+			<a th:href="@{/}" class="btn btn-outline-primary rounded"
+			   style="display: block; margin: 0 auto; text-align: center;">Volver</a>
+		</div>
 	</div>
 </header><!-- end of page header -->
 
@@ -61,14 +62,14 @@
 
 <!-- core  -->
 
-<script th:src="@{vendors/jquery/jquery-3.4.1.js}"></script>
-<script th:src="@{vendors/bootstrap/bootstrap.bundle.js}"></script>
+<script th:src="@{/vendors/jquery/jquery-3.4.1.js}"></script>
+<script th:src="@{/vendors/bootstrap/bootstrap.bundle.js}"></script>
 
 <!-- bootstrap 3 affix -->
-<script th:src="@{vendors/bootstrap/bootstrap.affix.js}"></script>
+<script th:src="@{/vendors/bootstrap/bootstrap.affix.js}"></script>
 
 <!-- Meyawo js -->
-<script th:src="@{js/meyawo.js}"></script>
+<script th:src="@{/js/meyawo.js}"></script>
 
 </body>
 
